@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c714d4fe4cadf42a6806e5af88f3f1, type: 3}
+  m_Name: M1911
+  m_EditorClassIdentifier: 
+  itemName: M1911
+  itemDescription: Just a fukking pistol
+  itemIcon: {fileID: 21300000, guid: 2cd81beb55e96ae459049dcdd4438dd5, type: 3}
+  weaponPosition: {fileID: 8900435116378683151, guid: 69211a6c2f1c49e43ac9c4b4eb194d3a,
+    type: 3}
+  weaponPrefab: {fileID: 7235473183896083312, guid: 2147d05e6f856d047b5f02eb3ad67d48,
+    type: 3}
+  muzzleFlash: {fileID: 8243341730148686308, guid: aec213e229c329b4eb48b665734dfb63,
+    type: 3}
+  magazineSize: 7
+  maxAmmo: 42
+  fireRate: 0.25
+  autoMode: 0
+  range: 50
+  weaponType: 1
+  weaponSlot: 1

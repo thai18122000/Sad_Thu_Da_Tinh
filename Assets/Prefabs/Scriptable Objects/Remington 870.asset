@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c714d4fe4cadf42a6806e5af88f3f1, type: 3}
+  m_Name: Remington 870
+  m_EditorClassIdentifier: 
+  itemName: Remington 870
+  itemDescription: A fukking shotgun
+  itemIcon: {fileID: 21300000, guid: 4bd7ee6286e44e4499f6ac26770e1afc, type: 3}
+  weaponPosition: {fileID: 6107412174439634951, guid: 626ea393852495441bbe9b9459340004,
+    type: 3}
+  weaponPrefab: {fileID: 3520643439954379542, guid: ffbcab98625961c45b3ccfdc6f2c8f60,
+    type: 3}
+  muzzleFlash: {fileID: 4726845560364606821, guid: 4a82ffe0412602042b9c14eb77f7171f,
+    type: 3}
+  magazineSize: 2
+  maxAmmo: 24
+  fireRate: 1.5
+  autoMode: 0
+  range: 10
+  weaponType: 3
+  weaponSlot: 0
