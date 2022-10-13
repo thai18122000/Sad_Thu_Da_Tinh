@@ -13,7 +13,8 @@ public class Weapon : Item{
     public int maxAmmo;
     public float fireRate;
     public bool autoMode;
-    public float range;
+    public bool infiniteAmmo;
+    public float range;    
     public WeaponType weaponType;
     public WeaponSlot weaponSlot;
     #endregion

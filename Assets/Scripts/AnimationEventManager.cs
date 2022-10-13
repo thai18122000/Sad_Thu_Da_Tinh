@@ -20,6 +20,7 @@ public class AnimationEventManager : MonoBehaviour{
         Debug.Log("wp Disable: "+ equipment.previousWeapon.name + " Time: " +Time.time);
         equipment.previousWeapon.SetActive(false);
         equipment.DropWeapon(equipment.tempWeapon, equipment.isDrop);
+        equipment.isDrop = false;
     }
 
     //Call in Model Animation events

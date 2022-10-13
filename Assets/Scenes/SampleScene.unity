@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f9078bac76de940ad112d14a671386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 300
+  mouseSensitivity: 250
   arms: {fileID: 1406190626}
   body: {fileID: 1631679118}
 --- !u!1 &395872086
@@ -2068,7 +2068,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1631679118}
   - component: {fileID: 1631679117}
-  - component: {fileID: 1631679116}
   - component: {fileID: 1631679115}
   - component: {fileID: 1631679119}
   - component: {fileID: 1631679120}
@@ -2100,20 +2099,6 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!136 &1631679116
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631679114}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.35
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &1631679117
 Rigidbody:
@@ -2215,7 +2200,10 @@ MonoBehaviour:
   weaponObjects: []
   defaultMeleeWeapon: {fileID: 8113347227336049081}
   currentWeaponBarrel: {fileID: 0}
+  cam: {fileID: 330585546}
   weaponHolderR: {fileID: 953500201}
+  dropForwardForce: 15
+  dropUpwardForce: 7
   tempWeapon: {fileID: 0}
   previousWeapon: {fileID: 0}
   newWeapon: {fileID: 0}
@@ -3558,6 +3546,7 @@ GameObject:
   - component: {fileID: 984735784746587142}
   - component: {fileID: 7659700576312373424}
   - component: {fileID: 1458153753342080995}
+  - component: {fileID: 7659700576312373425}
   m_Layer: 7
   m_Name: AK47 Prefab
   m_TagString: Untagged
@@ -4068,6 +4057,7 @@ GameObject:
   - component: {fileID: 5430413232741400920}
   - component: {fileID: 5662751467757981194}
   - component: {fileID: 875684051324061161}
+  - component: {fileID: 5662751467757981195}
   m_Layer: 7
   m_Name: Remington 870 Prefab
   m_TagString: Untagged
@@ -4640,6 +4630,7 @@ GameObject:
   - component: {fileID: 4773762132906700449}
   - component: {fileID: 2873539402402780415}
   - component: {fileID: 197932494346672357}
+  - component: {fileID: 4773762132906700450}
   m_Layer: 7
   m_Name: M24 Prefab
   m_TagString: Untagged
@@ -4694,6 +4685,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0321012, y: 0.31841478, z: 0.13599038}
   m_Center: {x: 0.5160506, y: 0.022189006, z: -0.0054000616}
+--- !u!54 &4773762132906700450
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604938134337341046}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 2
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &4804171202181327485
 GameObject:
   m_ObjectHideFlags: 0
@@ -5149,6 +5156,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &5662751467757981195
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520643439785814280}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 2
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &5721169139908006052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +5702,7 @@ GameObject:
   - component: {fileID: 557933638305111131}
   - component: {fileID: 7676871228280207457}
   - component: {fileID: 7298643228698966277}
+  - component: {fileID: 7676871228280207458}
   m_Layer: 7
   m_Name: M1911 Prefab
   m_TagString: Untagged
@@ -5930,6 +5954,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &7659700576312373425
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895806353933436277}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 2
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!95 &7676871228280207457
 Animator:
   serializedVersion: 4
@@ -5950,6 +5990,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &7676871228280207458
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235473184716112277}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 2
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!4 &7685520826979292554
 Transform:
   m_ObjectHideFlags: 0
@@ -6121,6 +6177,7 @@ GameObject:
   - component: {fileID: 449794172763146379}
   - component: {fileID: 2125625399048350225}
   - component: {fileID: 7418986850852682387}
+  - component: {fileID: 8113347227336049082}
   m_Layer: 7
   m_Name: Knife Prefab
   m_TagString: Untagged
@@ -6128,6 +6185,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8113347227336049082
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8113347227336049081}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 2
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!4 &8201724165369671005
 Transform:
   m_ObjectHideFlags: 0
