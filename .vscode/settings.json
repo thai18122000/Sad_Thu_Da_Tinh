@@ -63,5 +63,6 @@
         "ngoo",
         "ngốc",
         "phải"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
