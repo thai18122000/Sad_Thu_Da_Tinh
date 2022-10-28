@@ -88,7 +88,7 @@ public class Equipment : MonoBehaviour{
         hud.UpdateWeapon(weaponDetail.weapon.itemIcon, weaponDetail.currentAmmo, weaponDetail.storedAmmo);     
     }   
     public void UnEquipWeapon(){
-        anim.SetTrigger("UnEquipWeapon");        
+        anim.SetTrigger("UnEquip");        
     }
     public void DropWeapon(GameObject weaponToDrop, bool isDrop){
         if(isDrop == true){
